@@ -10,7 +10,7 @@ This Dockerfile is a wrapper over Senzing's G2Loader.py using the DB2 database c
     1. [Build docker image](#build-docker-image)
     1. [Create SENZING_DIR](#create-senzing_dir)
     1. [Set environment variables for demonstration](#set-environment-variables-for-demonstration)
-    1. [Run Docker container](#run-docker-container)
+    1. [Run docker container](#run-docker-container)
 1. [Develop](#develop)
     1. [Prerequisite software](#prerequisite-software)
     1. [Set environment variables for development](#set-environment-variables-for-development)
