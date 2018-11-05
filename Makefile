@@ -6,7 +6,7 @@ GIT_VERSION := $(shell git describe --always --tags --long --dirty | sed -e 's/\
 # Docker variables
 
 DOCKER_IMAGE_TAG ?= $(GIT_REPOSITORY_NAME):$(GIT_VERSION)
-DOCKER_IMAGE_NAME := senzing/g2loader-db2
+DOCKER_IMAGE_NAME := senzing/g2loader-db2-cluster
 
 # -----------------------------------------------------------------------------
 # The first "make" target runs as default.

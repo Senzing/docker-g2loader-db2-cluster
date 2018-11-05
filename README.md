@@ -13,9 +13,9 @@ This Dockerfile is a wrapper over Senzing's G2Loader.py using the DB2 database c
 
 ## Build docker image
 
-1. If `senzing/python-db2-base` image is not in local docker repository, it must be built manually.
+1. If `senzing/python-db2-cluster-base` image is not in local docker repository, it must be built manually.
    Follow the build instructions at
-   [github.com/Senzing/docker-python-db2-base](https://github.com/Senzing/docker-python-db2-base#build)
+   [github.com/Senzing/docker-python-db2-cluster-base](https://github.com/Senzing/docker-python-db2-cluster-base#build)
 
 1. Build image:
 

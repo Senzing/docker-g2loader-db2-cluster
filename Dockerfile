@@ -1,6 +1,6 @@
-FROM senzing/python-db2-base
+FROM senzing/python-db2-cluster-base
 
-ENV REFRESHED_AT=2018-11-02
+ENV REFRESHED_AT=2018-11-04
 
 # Copy files from repository.
 

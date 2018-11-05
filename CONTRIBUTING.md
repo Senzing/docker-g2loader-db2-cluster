@@ -83,7 +83,7 @@ The variables are used throughout the installation procedure.
 
 ```console
 export GIT_ACCOUNT=senzing
-export GIT_REPOSITORY=docker-g2loader-db2
+export GIT_REPOSITORY=docker-g2loader-db2-cluster
 ```
 
 Synthesize environment variables.
