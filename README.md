@@ -28,7 +28,7 @@ This Dockerfile is a wrapper over Senzing's G2Loader.py using the DB2 database c
 1. Build image:
 
     ```console
-    docker build --tag senzing/g2loader-db2-cluster https://github.com/senzing/docker-g2loader-db2-cluster.git
+    sudo docker build --tag senzing/g2loader-db2-cluster https://github.com/senzing/docker-g2loader-db2-cluster.git
     ```
 
 ### Create SENZING_DIR
@@ -49,7 +49,7 @@ This Dockerfile is a wrapper over Senzing's G2Loader.py using the DB2 database c
    Example:
 
     ```console
-    docker ps
+    sudo docker ps
 
     # Choose value from NAMES column of docker ps
     export DB2_HOST_CORE=docker-container-name-1
@@ -89,7 +89,7 @@ This Dockerfile is a wrapper over Senzing's G2Loader.py using the DB2 database c
    Example:
 
     ```console
-    docker network ls
+    sudo docker network ls
 
     # Choose value from NAME column of docker network ls
     export DB2_NETWORK=nameofthe_network
@@ -100,7 +100,7 @@ This Dockerfile is a wrapper over Senzing's G2Loader.py using the DB2 database c
 1. Run the docker container.
 
     ```console
-    docker run -it  \
+    sudo docker run -it  \
       --volume ${SENZING_DIR}:/opt/senzing \
       --net ${DB2_NETWORK} \
       --env SENZING_CORE_DATABASE_URL="db2://${DB2_USERNAME_CORE}:${DB2_PASSWORD_CORE}@${DB2_HOST_CORE}:${DB2_PORT_CORE}/${DB2_DATABASE_ALIAS_CORE}" \
@@ -132,8 +132,8 @@ make --version
 #### docker
 
 ```console
-docker --version
-docker run hello-world
+sudo docker --version
+sudo docker run hello-world
 ```
 
 ### Set environment variables for development
@@ -178,5 +178,5 @@ docker run hello-world
 
     ```console
     cd ${GIT_REPOSITORY_DIR}
-    docker build --tag ${DOCKER_IMAGE_TAG} .
+    sudo docker build --tag ${DOCKER_IMAGE_TAG} .
     ```
